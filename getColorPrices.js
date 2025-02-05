@@ -1,4 +1,5 @@
 import * as cheerio from 'cheerio';
+// curl -X GET --header 'Accept: application/json' --header 'Authorization: key XXXX' 'https://rebrickable.com/api/v3/lego/colors/?page_size=300' > src/data/lego-colors.json
 import colors from "./lego-colors.json" with { "type": "json" };
 import fs from 'fs/promises';
 import path from 'path';
